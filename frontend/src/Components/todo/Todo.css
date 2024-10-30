@@ -1,0 +1,130 @@
+.container {
+    width: 100%;
+}
+
+.todo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  
+}
+
+.todo-main {
+  height: 100%;
+  width: 100%;
+}
+
+.todo-card {
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+}
+
+.todo-inputs .MuiFilledInput-root {
+  background-color: #343a40;
+  border-radius: 5px;
+}
+
+.todo-inputs .MuiFilledInput-root {
+  background-color: #343a40;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.todo-inputs .MuiFilledInput-root:hover,
+.todo-inputs .MuiFilledInput-root:focus {
+  background-color: #495057;
+  box-sizing: border-box;
+}
+
+.todo-inputs .MuiFilledInput-multiline {
+  padding: 10px;
+}
+
+.todo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #343a40;
+  padding-bottom: 40px;
+}
+
+.todo-main {
+  height: auto;
+  width: 100%;
+}
+
+.todo-card {
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+}
+
+.todos-list {
+  max-width: 800px;
+  width: 100%;
+}
+
+.todo-display-card {
+  transition: transform 0.3s ease;
+}
+
+.todo-display-card:hover {
+  transform: translateY(-5px);
+}
+.todo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #343a40;
+  padding-bottom: 40px;
+}
+
+.todo-main {
+  height: auto;
+  width: 100%;
+}
+
+.todo-card {
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+}
+
+.todos-list {
+  max-width: 800px;
+  width: 100%;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+.todo-display-card {
+  transition: transform 0.3s ease;
+}
+
+.todo-display-card:hover {
+  transform: translateY(-5px);
+}
+.todos-list {
+    max-width: 800px;
+    width: 100%;
+    max-height: 600px; 
+    overflow-y: auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px; 
+  }
+  

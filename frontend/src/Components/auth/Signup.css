@@ -1,0 +1,49 @@
+/* Autofill fix for WebKit (Chrome, Safari, etc.) */
+input:-webkit-autofill,
+SELECT:-webkit-autofill,
+TEXTAREA:-webkit-autofill {
+  background-color: #343a40 !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px #343a40 inset !important;
+  color: white !important;
+}
+
+/* Autofill fix for Firefox and other browsers */
+input:-moz-autofill,
+input:-ms-autofill {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+/* Fix for input autofill focus */
+input:-webkit-autofill:focus,
+input:-moz-autofill:focus,
+input:-ms-autofill:focus {
+  background-color: #343a40 !important;
+  -webkit-text-fill-color: white !important;
+  color: white !important;
+}
+
+/* General input styles */
+input {
+  background-color: #343a40 !important;
+  color: white !important;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff !important; /* Blue highlight on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5) !important;
+}
+
+/* Label animation and autofill input fix */
+.form-outline input:focus ~ label,
+.form-outline input:not(:placeholder-shown) ~ label,
+.form-outline input:-webkit-autofill ~ label {
+  transform: translateY(-1.5em); /* Moves label up */
+  font-size: 0.85rem;
+  color: #ccc;
+}
